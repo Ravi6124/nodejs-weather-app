@@ -9,7 +9,7 @@ const forecast = (latitude ,longitude , callback)=>{
             callback('Try other coordinates',undefined)
         }
         else{
-            callback(undefined,body.currently.summary+". Currently it is "+body.currently.temperature+" degree celcius.There is "+body.currently.precipProbability+"% chance of rain")
+            callback(undefined,body.daily.summary+" Currently it is "+body.currently.temperature+" degree celcius.There is "+body.currently.precipProbability+"% chance of rain")
         }
     })
 }
